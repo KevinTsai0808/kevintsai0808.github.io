@@ -308,6 +308,10 @@
 		}
 
 		@media (max-width: 665px){
+
+			.logo2{
+				display: none;
+			}
 			/* 原本導覽列先隱藏 */
 			.mainnav{
 				 display: none;
