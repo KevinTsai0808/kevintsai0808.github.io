@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* 字體更改為思源正黑體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+		body{
+			margin: 0;
+			padding: 0;
+			color: #432;
+			line-height: 1.7;
+  			font-family: 'Noto Sans TC',sans-serif !important;
+			background-image: url(images/background.jpeg);
+		}
+
+		/* 設定顏色 去底線 */
+		a{
+			text-decoration: none;
+			color: #432;
+		}
+
+		/* 當滑鼠滑入時變重褐色 */
+		a:hover{
+			color: saddlebrown;
+		}
+
+		img{
+			max-width: 100%;
+		}
+
+		/* 咖啡店logo位置大小調整 */
+		.logo{
+			width: 100px;
+			margin-top: 15px;
+		}
+		.logo2{
+			width: 130px;
+			margin-bottom: 10px;
+		}
+		
+		/* 導覽列排版 大小 */
+		.mainnav{
+			display: flex;
+			font-size: 1.1rem;
+			text-transform: uppercase;
+			margin-top: 50px;
+		}
+		.mainnav li{
+			margin-left: 10px;
+			border-width: thin;
+			border-style: none dashed none none;
+			box-sizing: border-box;
+			padding-right: 40px;
+			padding-left: 20px;
+		}
+
+		/* 漢堡式選單隱藏 */
+		label{
+			display: none;
+		}
+		#burger{
+			display: none;
+		}
+
+		ul{
+			list-style: none;
+		}
+
+		/*響應式導覽列設計*/
+		.RWDnav{
+				/* 讓RWDnav浮在頁面上 */
+				position: absolute;
+				width: 100%;
+				/* 距離頁面頂端120px（絕對位置）*/
+				top: 120px;
+				/* 初始RWDnav高度設為0（電腦瀏覽時隱藏） */
+				transform: scaleY(0);
+				/*淡入淡出動畫設定 且是從RWDnav頂端向下延伸*/
+				transition: transform .3s ease-in-out;
+				transform-origin: 50% 0;
+				text-align: center;
+		}
+		.RWDnav li{
+			border-color: saddlebrown;
+			border-width: 3px 3px thin 3px;
+			border-style: double double solid double;
+			margin-right: 50px;
+		}
+		.RWDnav .last{
+			border-color: saddlebrown;
+			border-width: thin 3px 3px 3px;
+			border-style: none double double double;
+		}
+		.RWDnav .medium{
+			border-color: saddlebrown;
+			border-width: thin 3px thin 3px;
+			border-style: none double solid double;
+		}
+		.RWDnav li:hover{
+			background-color: lightgray;
+		}
+
+		/* 調整header位置 */
+		.logoandmainnav{
+			display: flex;
+			justify-content: space-between;
+			max-width: 1250px;
+			margin: 0 auto;
+			height: 40px;
+		}
+	
+		/* slideshow設定 */
+		.mySlides img{
+			height: 550px;
+			width: 100%;
+		}
+		.slideshow-container {
+		  max-width: 1300px;
+		  margin: auto;
+		  margin-top: 100px;
+		}
+
+		/* 點設定 */
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  /* 點背景顏色動畫設定 */
+		  transition: background-color 0.6s ease;
+		}
+		.active {
+		  background-color: #717171;
+		}
+		/* 定義slideshow動畫名稱及週期時間 */
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 4s;
+		}
+
+		/* 設定fade動畫的呈現(半透明到清晰) */
+		@keyframes fade {
+		  from {opacity: 0.5} 
+		  to {opacity: 1}
+		}
+
+		/* 設定標題 */
+		.homeTitle{
+			text-align: center;
+			font-size: 30px;
+		}
+
+		/* 產品推薦排版 */
+		.recommand{
+			display: grid;
+			gap: 30px;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		.recommand div{
+			overflow:hidden;
+			margin: 0 auto;
+			margin-top: 50px;
+			box-sizing: border-box;
+			max-width: 350px;
+			word-wrap: break-word;
+			
+		}
+		.recommand img{
+			display: block;
+			max-height: 170px;
+			margin:auto;
+			/*設定變化速度（數字越小越快）*/
+			transform:scale(1,1);
+			transition: all 1s ease-out;
+		}
+		.recommand img:hover{
+			/* 設定放大倍率 */
+			transform:scale(1.1);
+		}
+		.recommand a {
+			text-align: center;
+		}
+		.recommand p{
+			padding: 0 30px;
+		}
+
+		/* 品牌介紹排版 */
+		.introduction{
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		.introduction section{
+			box-sizing: border-box;
+			max-width: 500px;
+			word-wrap: break-word;
+			line-height: 1.8;
+			padding: 30px;
+		}
+		.introduction aside{
+			max-width: 500px;
+			overflow: hidden;
+		}
+		.introduction aside img{
+			/*設定變化速度（數字越小越快）*/
+			transform:scale(1,1);
+			transition: all 1s ease-out;
+		}
+
+		.introduction aside img:hover{
+			/*設定放大倍率*/
+			transform:scale(1.1);
+		}
+
+		.introduction2{
+			display: none;
+		}
+
+		/* 版權設定（班級姓名） */
+		.copyright{
+			max-height: 150px;
+			display: flex;
+			font-size: 0.6rem;
+		}
+		#box1{
+			margin-left: 30px;
+			flex-grow: 2;
+			border-width: thin;
+			border-style: solid solid solid none;
+			border-color: gray;
+			text-align: center;
+		}
+		#box2{
+			flex-grow: 3;
+			border-width:  thin;
+			border-style: solid solid solid none;
+			border-color: gray;
+			text-align: center;
+		}
+		#box3{
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-width: thin;
+			border-style: solid solid solid none;
+			border-color: gray;
+		}
+		#box3 a {
+			background-image: url(images/instagram.png);
+		}
+		#box4{
+			margin-right: 30px;
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-width: thin;
+			border-style: solid none solid none;
+			border-color: gray;
+		}
+		#box4 a {
+			background-image: url(images/facebook.png);
+		}
+		.socialmedia{
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 20%;
+			min-width: 30px;
+			height: 35%;
+		}
+
+		/* 響應式網站設定 */
+		@media (max-width: 992px){
+
+			/* 產品推薦排版 */
+			.recommand{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			/* 設定slideshow大小 */
+			.mySlides img{
+				height: 450px;
+				width: 100%;
+			}
+			.slideshow-container {
+			  margin: auto;
+			  margin-top: 100px;
+			}
+
+			/* 調整標題大小 */
+			.homeTitle {
+				font-size: 25px;	
+			}
+			h2{
+				font-size: 21px;
+			}
+
+			.introduction p{
+				font-size:14px;
+			}
+
+			.recommand{
+				font-size:14px;
+			}
+
+			a{
+				font-size:14px;
+			}
+
+		}
+		@media (max-width: 800px){
+			.introduction{
+				display: none;
+			}
+
+			.introduction2{
+				display: inline;
+				display: flex;
+				flex-direction: column;
+				max-width: 80%;
+				margin-top: 50px;
+				margin: auto;
+				line-height: 2em;
+			}
+
+			.introduction2 img{
+				margin: auto;
+			}
+
+			.introduction2 p{
+				font-size:14px;
+			}
+		}
+
+		@media (max-width: 665px){
+			/* slideshow設定 */
+			.mySlides img{
+				height: 350px;
+				width: 100%;
+			}
+			.slideshow-container {
+			  margin: auto;
+			  margin-top: 100px;
+			}
+
+			/* 原本導覽列先隱藏 */
+			.mainnav{
+				 display: none;
+			}
+			
+			/* 設定漢堡圖示大小 */
+			label{
+				display: block;
+				font-size: 40px;
+				margin-top: 40px;
+			}
+
+			/* 當點選漢堡選單時圖片變透明 RWDnav變回原本大小 */
+			#burger:checked ~ .belowburger  img{
+				opacity: 0.3;				
+			}
+			#burger:checked ~ .RWDnav{
+				transform: scaleY(1);
+			}
+
+			#burger:checked ~ .belowburger  {
+				margin-top: 280px;		
+			}
+
+			/* 一排一個 */
+			.recommand{
+				display: flex;
+				flex-direction: column;
+			}
+		}
