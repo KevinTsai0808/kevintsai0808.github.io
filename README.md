@@ -78,7 +78,14 @@ https://kevintsai0808.github.io/home.html
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174471797-c32a6156-7954-4f94-854f-452edf30b84f.png">
 
+
 接著透過 Routing 設置 /store 連接到 ServiceController 的 create 函數，此函數會將剛剛表單中的資料寫入 opinion 資料表：
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174471973-cb4df7f8-c93f-4804-a2e6-328c9a525b98.png">
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174471981-3d0d8969-82b8-46e7-bfa7-3eb5857096dc.png">
+
+實際操作：
 
 （三）	在/shoppingList頁面中顯示購物車內容（Read）以及更新產品購買數量（Update）以及刪除購物車產品（Delete）
 
