@@ -1,0 +1,42 @@
+
+		.submit2{
+			width: 60%;
+			margin-top: 30px;
+			margin-right: 75px;
+			padding: 8px;
+			background-color: saddlebrown;
+			border-radius: 5px;
+			border-width: 1px;
+			border-color: saddlebrown;
+			height:36px;
+		}
+
+		.submit2:hover{
+			background-color: sandybrown;
+		}
+		
+		.submit2 a {
+			color: white;
+		}
+		.total{
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.pay{
+			width: 30%;
+			padding: 8px;
+			background-color: saddlebrown;
+			border-radius: 5px;
+			border-width: 1px;
+			border-color: saddlebrown;
+			height:36px;
+			justify-content: center;
+			margin-left: 750px;
+		}
+
+		.pay a{
+			color: white;
+			
+		}
+		

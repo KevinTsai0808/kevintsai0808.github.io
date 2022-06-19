@@ -1,0 +1,332 @@
+
+/* 字體更改為思源正黑體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+		body{
+			margin: 0;
+			padding: 0;
+			color: #432;
+			line-height: 1.7;
+			font-family: 'Noto Sans TC',sans-serif !important;
+			background-image: url(/images/background.jpeg);
+		}
+
+		/* 設定顏色 去底線 */
+		a{
+			text-decoration: none;
+			color: #432;
+		}
+
+		/* 當滑鼠滑入時變重褐色 */
+		a:hover{
+			color: saddlebrown;
+		}
+
+		img{
+			max-width: 100%;
+		}
+
+		ul{
+			list-style: none;
+		}
+		h4{
+			color: gray;
+			text-align: center;
+		}
+
+		/* 漢堡式選單隱藏 */
+		label{
+			display: none;
+		}
+		#burger{
+			display: none;
+		}
+
+		/* 調整header位置 */
+		.logoandmainnav{
+			display: flex;
+			justify-content: space-between;
+			max-width: 1250px;
+			margin: 0 auto;
+			height: 40px;
+		}
+
+		/* 咖啡店logo位置大小調整 */
+		.logo{
+			width: 100px;
+			margin-top: 15px;
+		}
+		.logo2{
+			width: 130px;
+			margin-bottom: 10px;
+		}
+		
+		/* 導覽列排版 大小 */
+		.mainnav{
+			display: flex;
+			font-size: 1.1rem;
+			text-transform: uppercase;
+			margin-top: 50px;
+		}
+		.mainnav li{
+			margin-left: 10px;
+			border-width: thin;
+			border-style: none dashed none none;
+			box-sizing: border-box;
+			padding-right: 40px;
+			padding-left: 20px;
+		}
+
+		/* 圖片排版 */
+		/*.menuimage{
+			width: 100%;
+			height: 250px;
+			background-image: url(menuimage.png);
+			background-size: cover;
+			background-position: center right;
+			box-sizing: border-box;
+			margin-top: 100px;
+			padding-top: 50px;
+			color: white;
+			text-align: center;
+		}*/
+
+		/*響應式導覽列設計*/
+		.RWDnav{
+				/* 讓RWDnav浮在頁面上 */
+				position: absolute;
+				width: 100%;
+				/* 距離頁面頂端120px（絕對位置）*/
+				top: 120px;
+				/* 初始RWDnav高度設為0（電腦瀏覽時隱藏） */
+				transform: scaleY(0);
+				/*淡入淡出動畫設定 且是從RWDnav頂端向下延伸*/
+				transition: transform .3s ease-in-out;
+				transform-origin: 50% 0;
+				text-align: center;
+		}
+		.RWDnav li{
+			border-color: saddlebrown;
+			border-width: 3px 3px thin 3px;
+			border-style: double double solid double;
+			margin-right: 50px;
+		}
+		.RWDnav .last{
+			border-color: saddlebrown;
+			border-width: thin 3px 3px 3px;
+			border-style: none double double double;
+		}
+		.RWDnav .medium{
+			border-color: saddlebrown;
+			border-width: thin 3px thin 3px;
+			border-style: none double solid double;
+		}
+		.RWDnav li:hover{
+			background-color: lightgray;
+		}
+
+
+		.belowburger1{
+			margin-top: 75px;
+		}
+
+
+		/* 小導覽列	*/
+		.smalllink1{
+			box-sizing: border-box;
+			padding-top: 85px;
+			max-width: 1250px;
+			margin: 0 auto;
+		}
+
+		.maininfo{
+
+			display: grid;
+			gap: 0px;
+			/* 1:1 */
+			grid-template-columns: 1fr 1fr;
+			max-width: 1250px;
+			margin: auto;
+			margin-top: 40px;
+			line-height: 1;
+			text-align: center;
+		}
+		.maininfo ul{
+			text-align: left;
+			font-size: 18px;
+			line-height: 1.4;
+			list-style: disc;
+		}
+
+		.imgid{
+			margin-top: 30px;
+			width: 400px;
+		}
+		
+		.form1 {
+			display: grid;
+			gap: 0px;
+			/* 1:1 */
+			grid-template-columns: 1fr 1fr;
+			max-width: 625px;
+			margin: auto;
+			margin-top: 40px;
+			text-align: center;
+		}
+
+
+		.form1 div select{
+		    width: 50%;
+		    /* 邊線設定 */
+			border-color: saddlebrown;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 5px;
+			height: 36px;
+			font-size: 14px;
+			color: dimgrey;
+			/* 預設下拉圖示隱藏 */
+			appearance: none;
+			-webkit-appearance: none;
+   			-moz-appearance: none;
+   			/* 點選時的隔線隱藏 */
+   			outline: none;
+   			padding-left: 15px;	
+
+   			/*改變右邊箭頭樣式*/
+  			background-image : url("/images/arrow.png") ;
+  			background-repeat: no-repeat;
+  			background-size: contain;
+  			background-position: right;
+		}
+
+		.submit1{
+			width: 50%;
+			padding: 8px;
+			background-color: saddlebrown;
+			border-radius: 5px;
+			border-width: 1px;
+			border-color: saddlebrown;
+			height:36px;
+		}
+
+		.submit1:hover{
+			background-color: sandybrown;
+		}
+		
+		.submit1 a {
+			color: white;
+		}
+		
+		.valid{
+			display: none;
+		}
+		
+		/* 版權設定（班級姓名） */
+		.copyright{
+			margin-top: 150px;
+			max-height: 150px;
+			display: flex;
+			font-size: 0.6rem;
+			
+		}
+		#box1{
+			margin-left: 30px;
+			flex-grow: 2;
+			border-width: thin;
+			border-style: solid solid solid none;
+			border-color: gray;
+			text-align: center;
+		}
+		#box2{
+			flex-grow: 3;
+			border-width:  thin;
+			border-style: solid solid solid none;
+			border-color: gray;
+			text-align: center;
+		}
+		#box3{
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-width: thin;
+			border-style: solid solid solid none;
+			border-color: gray;
+		}
+		#box3 a {
+			background-image: url(/images/instagram.png);
+		}
+		#box4{
+			margin-right: 30px;
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-width: thin;
+			border-style: solid none solid none;
+			border-color: gray;
+		}
+		#box4 a {
+			background-image: url(/images/facebook.png);
+		}
+		.socialmedia{
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 20%;
+			min-width: 30px;
+			height: 35%;
+		}
+
+
+		/* 響應式網站設定 */
+		@media (max-width: 992px){
+			/* 依照畫面寬度自動換行 */
+			.mainmenu{
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			}
+			h2{
+				font-size:21px;
+			}
+			h4{
+				font-size:14px;
+			}
+			.mainmenu p{
+				font-size:14px;
+			}
+			.maininfo ul p{
+				font-size:14px;
+			}
+			a{
+				font-size:14px;
+			}
+		}
+
+		@media (max-width: 665px){
+			/* 原本導覽列先隱藏 */
+			.mainnav{
+				 display: none;
+			}
+			
+			/* 設定漢堡圖示大小 */
+			label{
+				display: block;
+				font-size: 40px;
+				margin-top: 40px;
+			}
+
+			/* 當點選漢堡選單時圖片變透明 RWDnav變回原本大小 */
+			#burger:checked ~.belowburger img{
+				opacity: 0.3;				
+			}
+
+			#burger:checked ~.belowburger .menuimage{
+				opacity: 0.3;				
+			}
+
+			#burger:checked ~ .RWDnav{
+				transform: scaleY(1);
+			}
+			#burger:checked ~.belowburger  {
+				margin-top: 280px;		
+			}
+		}
