@@ -87,5 +87,47 @@ https://kevintsai0808.github.io/home.html
 
 實際操作：
 
-（三）	在/shoppingList頁面中顯示購物車內容（Read）以及更新產品購買數量（Update）以及刪除購物車產品（Delete）
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174473512-8dbb9c8b-5869-48b5-821c-8c05f44f1796.png">
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174473523-8d09c74f-3a40-45f2-92c9-8ca9d5bb7ba7.png">
+
+（三）	在 /shoppingList 頁面中顯示購物車內容（Read）以及更新產品購買數量（Update）以及刪除購物車產品（Delete）
+
+當顧客按下導覽列中的『購物車』後，會透過 Routing 連接到 shoppingList.blade.php 讀取資料表中資料到網頁，接著當顧客想更改購買的數量時就需要用到CRUD中的Update功能，想刪除產品則需要用到 Delete功能，當顧客重新選擇好數量後按下『確認更改』按鈕、而當顧客想移除此商品則按下『刪除訂單』按鈕，表單便會透過 form 標籤中設定的 action 前往 /update 或是 /delete。
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174474049-2cd08bb8-b52c-4336-8435-6b778553c8f3.png">
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474063-bb81ca1f-2746-42da-9537-9f30854f58e5.png">
+
+然後在 Routing 中設置 /update 會連接到 ServiceController 的 update 函數，/delete 則會連接到 delete 函數：
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174474155-2dab7a11-01b5-4363-bb51-361947a2bb60.png">
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/103521272/174474336-aa086d57-24f5-45ca-b247-46714ac2077b.png">
+
+實際操作：
+
+原本購物車：
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474399-fbeae070-5b9f-4cd7-9365-709488de268c.png">
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474413-22376f75-1724-4713-bb90-b714fcb29f18.png">
+
+更改產品數量：
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474426-faab8e92-b21b-4943-8ba8-28ec866cccc9.png">
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474465-67cda36d-3d2f-49a3-8f64-978957309801.png">
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474525-e6ccfb81-0ab0-4b5f-bbea-5c51d186b61e.png">
+
+刪除產品：
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474671-00054861-80e4-4948-acf6-6f030eed6b65.png">
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/103521272/174474685-408b7e1d-f12d-429e-a2e5-eb6444270aca.png">
+
+
+
+
 
