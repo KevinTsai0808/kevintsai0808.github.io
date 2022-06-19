@@ -1,4 +1,3 @@
-@charset "UTF-8";
 
 /* 字體更改為思源正黑體 */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
@@ -226,14 +225,19 @@
 			padding: 10px 40px;
 			margin-left: 76%;
 			border-radius: 5px;
+			border-width: 1px;
 			font-size: 14px;
+		}
+
+		#submit a{
+			color: white;
 		}
 
 		#submit:hover{
 			background-color: sandybrown;
 		}
 
-		section{
+		.mapsection{
 			max-width: 1250px;
 			display: flex;
 			justify-content: space-between;
@@ -323,10 +327,6 @@
 		}
 
 		@media (max-width: 665px){
-			
-			.logo2{
-				display: none;
-			}
 			/* 原本導覽列先隱藏 */
 			.mainnav{
 				 display: none;
